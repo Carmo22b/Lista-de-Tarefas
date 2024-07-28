@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eeeeee;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 90%;
+    /*border: 1px solid red;*/
+    margin: auto auto;
+}
+
+input{
+    height: 120px;
+    font-size: 2rem;
+    width: 80%;
+    padding-left: 10%;
+
+
+}
+
+button.add{
+    width: 20%;
+    cursor: pointer;
+    background: forestgreen;
+    color: white;
+    font-weight: bold;
+    border: none;
+    height: 120px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+button.add:hover{
+    width: 20%;
+    cursor: pointer;
+    background: rgb(25, 168, 25);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: none;
+    height: 120px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 0.5s;
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto auto;
+    /*border: 1px solid blue;*/
+    padding-top: 40px;
+}
+
+.item{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 20px #ccc;/**/
+    margin-bottom: 2%;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.item_clicado{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 20px #ccc;
+    margin-bottom: 2%;
+    background: #b5ffb3;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.item_clicado .item_nome{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.item_icone{
+    flex: 20%;
+    /*color: rgb(15, 129, 0);*/
+    text-align: center;
+    font-size: 2rem;
+}
+
+.item_nome{
+    flex: 55%;
+    /*border: 1px solid rgb(102, 255, 0);*/
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item_botao{
+    flex: 25%;
+    /*border: 1px solid rgb(119, 0, 255);*/
+    
+    
+}
+
+.delete{
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+    cursor: pointer;
+    
+}
+
+.delete:hover{
+    background: rgb(241, 0, 0);
+    color: white;
+    border: none;
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+.item_clicado .item_icone .material-symbols-outlined{
+    color: green;
+}
+
